@@ -1,25 +1,52 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabo</title>
-</head>
-    <body>
-        <header>
-        encabezado 
-        </header>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabo</title>
+        <style>
+            /*Estilo embebidos (Forma 2)*/ 
+            main {
+                background-color: brown;
+            color: aquamarine;
+        }
+        </style>
+        <!-- Estilos en un archico externo (Forma 3)-->
+        <link rel="stylesheet" href="css/main.css">
+    
+    </head>
+        <body>
+            <!-- 1 Forma.Style inline (Forma 1)-->
+            <header id="header" class="header">
 
-        <main>
-            Contendo principal
-            <aside>
-                widges a los lados 
-            </aside> 
+                <div class="logo">
+                    <img id="logo" src="./images/logo.png" alt="Logo Gabo">
+                </div>
+                <div class="menu-principal">
+                    <a href="#">Categorias</a>
+                    <a href="#">Biografia</a>
+                    <a href="#">Premios</a>
+                </div>
+                </header>
 
-        </main>
+            <main>
+                Contendo principal
+                <!-- JavaScript (Forma 1) Javascript inline -->
+                <button onclick="Saluda()">Saludame</button>
+                <aside>
+                    <!-- JavaScript (Forma2) JavaScript Embebido -->
+                    <script>
+                        alert("Nuevamente Saludando")
+                    </script>
+                    widges a los lados 
+                </aside> 
+            </main>
+            <footer class="footer">
+                <!-- JavaScript (Forma 3) Java Script  -->
+                <script>
 
-        <footer>
-            pie de pagina
-        </footer>
-    </body>
-    </html>
+                </script>
+                pie de pagina
+            </footer>
+        </body>
+        </html>
