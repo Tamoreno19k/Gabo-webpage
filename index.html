@@ -1,52 +1,35 @@
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gabo</title>
-        <style>
-            /*Estilo embebidos (Forma 2)*/ 
-            main {
-                background-color: brown;
-            color: aquamarine;
-        }
-        </style>
-        <!-- Estilos en un archico externo (Forma 3)-->
-        <link rel="stylesheet" href="css/main.css">
-    
-    </head>
-        <body>
-            <!-- 1 Forma.Style inline (Forma 1)-->
-            <header id="header" class="header">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabo</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- CSS (Forma 1): style inline -->
+    <header>
+        <div class="menu-principal">
+            <a href="#">Categorias</a>
+            <a href="#">Biografia</a>
+            <a href="#">Premios</a>
+        </div>
+        <div class="logo">
+            <img id="logo" src="./images/logo.png" alt="Logo: Gabriel ">
+        </div>
+        
+    </header>
+    <main class="main">
+        <!-- <img src="./images/banner.jpg" alt="banner gabo"> -->
+        <div class="banner">
+        <h1 class="banner-tittle"> Gabriel Garcia Marquez </h1>
+        </div>
+    </main>
+    <footer class="footer">
+        Aqui van los Widgets de la pagina
+        Aqui va el pie de pagina
+    </footer>
 
-                <div class="logo">
-                    <img id="logo" src="./images/logo.png" alt="Logo Gabo">
-                </div>
-                <div class="menu-principal">
-                    <a href="#">Categorias</a>
-                    <a href="#">Biografia</a>
-                    <a href="#">Premios</a>
-                </div>
-                </header>
-
-            <main>
-                Contendo principal
-                <!-- JavaScript (Forma 1) Javascript inline -->
-                <button onclick="Saluda()">Saludame</button>
-                <aside>
-                    <!-- JavaScript (Forma2) JavaScript Embebido -->
-                    <script>
-                        alert("Nuevamente Saludando")
-                    </script>
-                    widges a los lados 
-                </aside> 
-            </main>
-            <footer class="footer">
-                <!-- JavaScript (Forma 3) Java Script  -->
-                <script>
-
-                </script>
-                pie de pagina
-            </footer>
-        </body>
-        </html>
+    <script src="./js/main.js"></script>
+</body>
+</html>

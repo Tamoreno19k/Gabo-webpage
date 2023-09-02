@@ -3,26 +3,49 @@ body {
 }
 
 header {
-    background-color: grey;
+    background-color: lightgray;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
+    flex-direction: row-reverse;
 }
+
 img#logo {
-    padding: 0.2rem;
-    width: 9rem;
+    width: 8rem;
+    padding: 0.5rem;
 }
+
 a {
     text-decoration: none;
-    font-size: 1.1rem;
-    /* border: 1px solid; */
-    /* padding: 1.1rem; */
-    margin: 1.2rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: black;
     font-weight: 500;
 }
-main {background-color: aquamarine;
 
+.main {
+    background-color: #b4c2dd;;
+    color: white;
+}
+.banner { background-image: url(../images/banner.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 29vw;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+}
+.banner-tittle {
+    margin-right: 2rem;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    width: 25vw;
 }
 
-footer{background-color: gold
-    colorgreen ;}
+
+footer {
+    background-color: pink;
+}
